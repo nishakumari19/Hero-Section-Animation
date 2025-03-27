@@ -67,7 +67,7 @@ body {
 
 .hollow-text {
     color: transparent;
-    -webkit-text-stroke: 2px white;
+    -webkit-text-stroke: 1px white;
 }
 
 /* Keyframes for Animation */
