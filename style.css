@@ -1,0 +1,82 @@
+body {
+    background-color: rgba(16, 45, 54, 1);
+    color: #fff;
+    overflow: hidden;
+    margin: 0;
+}
+
+.hero-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.heading {
+    width: 900px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.hero-title {
+    font-size: 500px;
+    font-weight: bold;
+    z-index: 10;
+    position: absolute;
+    animation: fadeInSlide 1.5s ease-out forwards;
+    pointer-events: none;
+}
+
+.hero-title span {
+    color: #00bcd4;
+}
+
+
+.image-grid {
+    position: absolute;
+    width: 1500px;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    animation: fadeInSlide 1.5s ease-out 1.5s forwards;
+}
+
+.image-grid img {
+    width: 1500px;
+    height: 1000px;
+    object-fit: cover;
+    border-radius: 12px;
+    position: absolute;
+}
+
+/* Hover Effects */
+.image-grid:hover {
+    z-index: 999;
+    cursor: pointer;
+}
+
+.hollow-text {
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+}
+
+/* Keyframes for Animation */
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
